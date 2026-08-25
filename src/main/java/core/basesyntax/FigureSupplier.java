@@ -10,15 +10,29 @@ public class FigureSupplier {
         int figureType = random.nextInt(5);
         switch (figureType) {
                 case 0:
-                    return new Circle(colorSupplier.getRandomColor(), random.nextDouble() * 10);
+                    return new Circle(colorSupplier.getRandomColor(),
+                            random.nextDouble() * 10);
+
                 case 1:
-                    return new Square(colorSupplier.getRandomColor(), random.nextDouble() * 10);
+                    return new Square(colorSupplier.getRandomColor(),
+                            random.nextDouble() * 10);
+
                 case 2:
-                    return new Rectangle(colorSupplier.getRandomColor(), random.nextDouble() * 10, random.nextDouble() * 10);
+                    return new Rectangle(colorSupplier.getRandomColor(),
+                            random.nextDouble() * 10,
+                            random.nextDouble() * 10);
+
                 case 3:
-                    return new RightTriangle(colorSupplier.getRandomColor(), random.nextDouble() * 10, random.nextDouble() * 10);
+                    return new RightTriangle(colorSupplier.getRandomColor(),
+                            random.nextDouble() * 10,
+                            random.nextDouble() * 10);
+
                 case 4:
-                    return new IsoscelesTrapezoid(colorSupplier.getRandomColor(),  random.nextDouble() * 10, random.nextDouble() * 10, random.nextDouble() * 10);
+                    return new IsoscelesTrapezoid(colorSupplier.getRandomColor(),
+                            random.nextDouble() * 10,
+                            random.nextDouble() * 10,
+                            random.nextDouble() * 10);
+
                 default:
                     return getDefaultFigure();
         }

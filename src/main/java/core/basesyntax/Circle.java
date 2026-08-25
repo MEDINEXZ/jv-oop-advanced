@@ -8,16 +8,16 @@ public class Circle extends Figure {
         this.radius = radius;
     }
 
-    public void setRadius(double radius){
+    public void setRadius(double radius) {
         this.radius = radius;
     };
 
-    public double getRadius(){
+    public double getRadius() {
         return radius;
     }
 
     @Override
-    public double getArea(){
+    public double getArea() {
         return Math.PI * Math.pow(radius, 2);
     }
 

@@ -12,7 +12,7 @@ public abstract class Figure {
 
     public String getColor() {
         return color;
-    };
+    }
 
     public abstract double getArea();
 

@@ -28,9 +28,11 @@ public class IsoscelesTrapezoid extends Figure {
     public double getFirstBase() {
         return firstBase;
     }
+
     public double getSecondBase() {
         return secondBase;
     }
+
     public double getHeight() {
         return height;
     }
