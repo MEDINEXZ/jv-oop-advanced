@@ -1,0 +1,31 @@
+package core.basesyntax;
+
+public class Square extends Figure {
+    private double sideLength;
+
+    public Square(String color, double sideLength) {
+        super(color);
+        this.sideLength = sideLength;
+    }
+
+    public void setSideLength(double sideLength) {
+        this.sideLength = sideLength;
+    }
+
+    public double getSideLength() {
+        return sideLength;
+    }
+
+    @Override
+    public double getArea() {
+        return sideLength * sideLength;
+    }
+
+    @Override
+    public String draw() {
+        return "Figure: square, area: "
+                + getArea() + ", "
+                + "side length: " + getSideLength()
+                + ", " + "color: " + getColor();
+    }
+}
