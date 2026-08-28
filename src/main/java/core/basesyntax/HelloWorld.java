@@ -4,10 +4,13 @@ package core.basesyntax;
  * Feel free to remove this class and create your own.
  */
 public class HelloWorld {
+
+    private static final int FIGURE_COUNT = 6;
+
     public static void main(String[] args) {
         FigureSupplier figureSupplier = new FigureSupplier();
 
-        Figure[] figures = new Figure[6];
+        Figure[] figures = new Figure[FIGURE_COUNT];
 
         for (int i = 0; i < figures.length; i++) {
             if (i < figures.length / 2) {
@@ -18,7 +21,7 @@ public class HelloWorld {
         }
 
         for (Figure figure : figures) {
-            System.out.println(figure.draw());
+            figure.draw();
         }
     }
 

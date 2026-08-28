@@ -22,10 +22,10 @@ public class Circle extends Figure {
     }
 
     @Override
-    public String draw() {
-        return "Figure: circle, area: "
+    public void draw() {
+        System.out.println("Figure: circle, area: "
                 + getArea() + ", "
                 + "radius: " + getRadius()
-                + ", " + "color: " + getColor();
+                + ", color: " + getColor());
     }
 }
