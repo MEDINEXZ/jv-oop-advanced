@@ -3,8 +3,6 @@ package core.basesyntax;
 import java.util.Random;
 import java.util.function.Supplier;
 
-import static core.basesyntax.Color.WHITE;
-
 public class FigureSupplier {
     private static final double DEFAULT_SIZE = 10;
 
@@ -47,6 +45,6 @@ public class FigureSupplier {
     }
 
     public Figure getDefaultFigure() {
-        return new Circle(WHITE, DEFAULT_SIZE);
+        return new Circle(Color.WHITE, DEFAULT_SIZE);
     }
 }
